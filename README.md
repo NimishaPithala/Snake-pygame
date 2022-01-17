@@ -106,7 +106,7 @@ snake_go()
 if snake.xcor()>280 or snake.xcor()< -300 or snake.ycor()>240 or snake.ycor()<-240:
 time.sleep(1)
 screen.clear()
-screen.bgcolor('turquoise')
+screen.bgcolor('blue')
 scoring.goto(0,0)
 scoring.write(" GAME OVER \n Your Score is {}".format(score),align="center",font
 ("Courier",20,"bold"))
@@ -115,7 +115,7 @@ for food in old_food:
 if food.distance(snake) < 10:
 time.sleep(1)
 screen.clear()
-screen.bgcolor('turquoise')
+screen.bgcolor('blue')
 scoring.goto(0,0)
 scoring.write("GAME OVER \n Your Score is {}".format(score),align="center",font=("Courier",28,"bold"))
                 
